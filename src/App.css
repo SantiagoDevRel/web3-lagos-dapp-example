@@ -1,3 +1,4 @@
+/* General App styling */
 .App {
   text-align: center;
 }
@@ -28,6 +29,35 @@
   color: #61dafb;
 }
 
+/* Button Styling */
+button {
+  background-color: #ff6b00; /* Primary orange color */
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #e65a00; /* Slightly darker shade for hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+button:active {
+  background-color: #cc5200; /* Even darker shade for active state */
+  transform: scale(0.98); /* Slight shrink on click */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ff6b00; /* Focus shadow for accessibility */
+}
+
+/* Keyframes for logo spin */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
